@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Skinny-to-Strong Blueprint | Finally Gain Muscle</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #f0f0f0;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        #google_translate_element {
+            text-align: right;
+            padding: 10px;
+            background-color: #0a0a0a;
+            border-bottom: 1px solid #333;
+        }
+        .skiptranslate { display: none !important; }
+        body { top: 0 !important; }
+
+        header {
+            text-align: center;
+            padding: 40px 10px;
+        }
+        h1 {
+            font-size: 2.8rem;
+            color: #ffffff;
+            font-weight: 800;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+        .highlight { color: #ff6600; }
+        .sub-headline {
+            font-size: 1.3rem;
+            color: #c0c0c0;
+            font-weight: 300;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .pain-section {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 30px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .pain-section h2 {
+            font-size: 1.8rem;
+            color: #ff6600;
+            margin-top: 0;
+        }
+        .pain-section p {
+            font-size: 1.1rem;
+            color: #dcdcdc;
+        }
+
+        .solution-section { margin-top: 40px; }
+        h3 {
+            font-size: 1.6rem;
+            color: #ffffff;
+            border-bottom: 2px solid #ff6600;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+        .features-list {
+            list-style-type: none;
+            padding-left: 0;
+            font-size: 1.15rem;
+        }
+        .features-list li {
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 15px;
+        }
+        .features-list li::before {
+            content: '✅';
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1.2rem;
+        }
+
+        .testimonials-section { margin-top: 40px; }
+        .testimonial-item {
+            background-color: #222;
+            border-left: 5px solid #ff6600;
+            padding: 20px 25px;
+            margin-bottom: 30px;
+            border-radius: 0 5px 5px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .testimonial-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        .testimonial-item p {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #e0e0e0;
+            margin: 0;
+        }
+        .testimonial-item .author {
+            font-style: normal;
+            font-weight: bold;
+            color: #ff6600;
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+
+        .cta-box {
+            background-color: #0a0a0a;
+            border: 2px solid #ff6600;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 50px;
+            box-shadow: 0 0 20px rgba(255, 102, 0, 0.2);
+        }
+        .cta-box h2 {
+            font-size: 1.8rem;
+            color: #fff;
+            margin-top: 0;
+        }
+        .price {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: #ff6600;
+            margin: 10px 0;
+        }
+        .price span.old-price {
+            font-size: 1.5rem;
+            color: #888;
+            text-decoration: line-through;
+            margin-right: 10px;
+        }
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(145deg, #ff8c00, #ff4500);
+            color: #ffffff;
+            padding: 20px 40px;
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: 700;
+            border-radius: 8px;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 5px 15px rgba(255, 102, 0, 0.3);
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 102, 0, 0.5);
+        }
+
+        .secure-payments {
+            margin-top: 20px;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+        .payment-icons {
+            font-size: 1.5rem;
+            color: #ccc;
+            letter-spacing: 5px;
+        }
+
+        .timer {
+            font-size: 1.2rem;
+            color: #ff6600;
+            font-weight: 600;
+            margin-top: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #777;
+            border-top: 1px solid #333;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2.2rem; }
+            .sub-headline { font-size: 1.1rem; }
+            .cta-button { padding: 15px 30px; font-size: 1.2rem; }
+            .price { font-size: 2.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="google_translate_element"></div>
+
+    <div class="container">
+        <header>
+            <h1>Transform Your Body in 30 Days—Even If You Think <span class="highlight">Gaining Muscle is Impossible.</span></h1>
+            <p class="sub-headline">Discover the science-backed method helping skinny beginners ("hardgainers") finally build real muscle... without expensive gyms or useless supplements.</p>
+        </header>
+
+        <section class="pain-section">
+            <h2>Does This Sound Familiar?</h2>
+            <p>You've tried everything to grow, but nothing works.<br>
+            Random workouts, forcing yourself to eat until you're sick, supplements that just drain your wallet...</p>
+            <p><strong>And still, the mirror looks exactly the same.</strong></p>
+            <p>It's frustrating. You start to think, "Was I just born to be skinny?"</p>
+            <p>The truth is: <strong>It’s not your body. It’s your method.</strong> You're following advice made for people who *already* have muscle.</p>
+        </section>
+
+        <section class="solution-section">
+            <h3>The Blueprint Built For You</h3>
+            <p>Imagine a simple, step-by-step plan created specifically for the "hardgainer" metabolism. A plan for busy beginners who want real results without living in the gym.</p>
+            <p>This is the <strong>Skinny-to-Strong Blueprint</strong>: The complete guide to building your first 10lbs of solid muscle, even if you're starting from scratch.</p>
+
+            <h3>Here's Exactly What You'll Get Inside:</h3>
+            <ul class="features-list">
+                <li><strong>The "Ectomorph Engine" Workout:</strong> 3-day/week routine designed for skinny beginners — simple and powerful.</li>
+                <li><strong>“No-Bloat” Nutrition Plan:</strong> Learn what and when to eat to gain mass naturally without feeling sick or bloated.</li>
+                <li><strong>Protein Recipes for Real Growth:</strong> Quick and tasty meals that fuel muscle recovery fast.</li>
+                <li><strong>Rest & Recovery Secrets:</strong> Sleep hacks and micro-habits that turn rest into growth time.</li>
+                <li><strong>Mindset of a Gainer:</strong> Build consistency, discipline, and a winner's mindset in just minutes a day.</li>
+            </ul>
+        </section>
+
+        <section class="testimonials-section">
+            <h3>What Other "Hardgainers" Are Saying...</h3>
+            
+            <div class="testimonial-item">
+                <img src="joao.png" alt="Testimonial from João M. - Before and After Muscle Gain">
+                <p>"I was skinny my whole life. I thought it was just my genetics. After 4 weeks on this blueprint, I gained 7 lbs (3kg) of lean mass without setting foot in a gym."</p>
+                <p class="author">— João M., 22</p>
+            </div>
+            
+            <div class="testimonial-item">
+                <img src="liam.png" alt="Testimonial from Mike P. - Efficient Home Workout">
+                <p>"This program is efficient. I'm in and out of my living room in 40 minutes and I'm stronger than ever. For $5, this is a steal."</p>
+                <p class="author">— Mike P., 31</p>
+            </div>
+
+            <div class="testimonial-item">
+                <img src="sarah.png" alt="Testimonial from Sarah K. - Gaining Strength Without Bulk">
+                <p>"I didn’t want to get bulky, just strong. This blueprint gave me the confidence to start, and the results are amazing."</p>
+                <p class="author">— Sarah K., 25</p>
+            </div>
+        </section>
+
+        <section class="cta-box">
+            <h2>Get The Complete Blueprint Today</h2>
+            <p>This isn't just another fitness PDF — it's a proven roadmap to transform your physique.  
+               Inside, you’ll get a 4-week training plan, full meal guide, mindset coaching, and beginner-friendly science that *actually makes sense*.  
+               You’ll also receive lifetime access to updates — so your progress never stops.</p>
+            
+            <div class="price">
+                <span class="old-price">$7.10</span>$4.97
+            </div>
+            <p>One-Time Payment. Instant Digital Access.</p>
+
+            <div class="timer" id="countdown"></div>
+
+            <a href="https://www.paypal.com/ncp/payment/FZ8H88D8S5EZ6" class="cta-button">Get Instant Access Now — Only $4.97</a>
+
+            <div class="secure-payments">
+                <p>100% Secure Transaction</p>
+                <div class="payment-icons">💳  Pay</div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 MuscleLab Fitness. All rights reserved.</p>
+            <p>This site is not affiliated with Facebook or any Facebook entity. Once you leave Facebook, the responsibility is no longer on their site. We make every effort to clearly state and show all proof.</p>
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        (function () {
+            var lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase().split('-')[0];
+            var supported = ['en','pt','es','fr','hi'];
+            if (supported.includes(lang) && lang !== 'en') {
+                window.location.replace('/' + lang + '/muscle.html');
+                return;
+            }
+        })();
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+                'google_translate_element'
+            );
+        }
+
+        const countdownEl = document.getElementById('countdown');
+        let timeLeft = 60 * 60;
+
+        function updateCountdown() {
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+            countdownEl.textContent = `⚡ Offer ends in ${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+            if (timeLeft > 0) {
+                timeLeft--;
+                setTimeout(updateCountdown, 1000);
+            } else {
+                countdownEl.textContent = "⏰ Offer expired — may reset soon!";
+            }
+        }
+        updateCountdown();
+    </script>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
