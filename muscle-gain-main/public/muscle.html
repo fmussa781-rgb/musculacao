@@ -290,11 +290,17 @@
 
     <script type="text/javascript">
         (function () {
-            var lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase().split('-')[0];
-            var supported = ['en','pt','es','fr','hi'];
-            if (supported.includes(lang) && lang !== 'en') {
-                window.location.replace('/' + lang + '/muscle.html');
-                return;
+            var raw = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+            var base = raw.split('-')[0];
+            var map = { 'pt': 'pt', 'pt-br': 'pt', 'es': 'es', 'es-es': 'es', 'fr': 'fr', 'fr-fr': 'fr', 'hi': 'hi', 'hi-in': 'hi', 'en': 'en', 'en-us': 'en', 'en-gb': 'en' };
+            var lang = map[raw] || map[base] || 'en';
+            if (lang !== 'en') {
+                var target = '/' + lang + '/muscle.html';
+                try {
+                    fetch(target, { method: 'HEAD' })
+                      .then(function (res) { if (res && res.ok) window.location.replace(target); })
+                      .catch(function () {});
+                } catch (e) {}
             }
         })();
         function googleTranslateElementInit() {
